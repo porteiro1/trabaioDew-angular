@@ -1,0 +1,124 @@
+<header class="top-bar">
+  <h1>Animações CSS</h1>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <h2>10) Animações com CSS</h2>
+    <p>O CSS permite criar animações sem JavaScript. As duas formas principais são <code>transition</code> para efeitos no hover e <code>&#64;keyframes</code> com <code>animation</code> para animações automáticas.</p>
+  </section>
+
+  <section class="topics">
+    <article class="card">
+      <h3>transition</h3>
+      <p>Cria uma transição suave quando uma propriedade muda de valor. Muito usado com <code>:hover</code>.</p>
+<pre><code>.botao &#123;
+  background: gray;
+  transition: background 0.3s;
+&#125;
+
+.botao:hover &#123;
+  background: #444;
+&#125;</code></pre>
+      <p>Passe o mouse no botão:</p>
+      <button class="btn-transition" type="button">Passe o mouse aqui</button>
+    </article>
+
+    <article class="card">
+      <h3>transform</h3>
+      <p>Muda a forma ou posição de um elemento visualmente. Pode ser usado junto com <code>transition</code>.</p>
+<pre><code>.caixa:hover &#123;
+  transform: scale(1.1);
+  transform: rotate(5deg);
+  transform: translateX(10px);
+&#125;</code></pre>
+      <p>Passe o mouse nas caixas:</p>
+      <div class="demo-transforms">
+        <div class="box box-scale">Scale</div>
+        <div class="box box-rotate">Rotate</div>
+        <div class="box box-translate">Translate</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>&#64;keyframes</h3>
+      <p>Define os estados de uma animação. Você escolhe o que acontece no início e no fim.</p>
+<pre><code>&#64;keyframes piscar &#123;
+  from &#123; opacity: 1; &#125;
+  to   &#123; opacity: 0; &#125;
+&#125;</code></pre>
+    </article>
+
+    <article class="card">
+      <h3>animation</h3>
+      <p>Aplica o <code>&#64;keyframes</code> a um elemento, definindo duração, repetição e estilo.</p>
+<pre><code>.caixa &#123;
+  animation: piscar 1s infinite alternate;
+&#125;</code></pre>
+    </article>
+  </section>
+
+  <section class="demos-animacao">
+    <h2>Demonstrações de animação</h2>
+    <div class="demo-grid-animacoes">
+      <article class="demo-card">
+        <h3>Pulsando</h3>
+<pre><code>&#64;keyframes pulsar &#123;
+  0% &#123; transform: scale(1); &#125;
+  50% &#123; transform: scale(1.2); &#125;
+  100% &#123; transform: scale(1); &#125;
+&#125;</code></pre>
+        <div class="demo-area"><div class="bola-pulsar" aria-label="Bola pulsando"></div></div>
+      </article>
+
+      <article class="demo-card">
+        <h3>Deslizando</h3>
+<pre><code>&#64;keyframes deslizar &#123;
+  from &#123; transform: translateX(0); &#125;
+  to   &#123; transform: translateX(60px); &#125;
+&#125;</code></pre>
+        <div class="demo-area"><div class="bola-deslizar" aria-label="Quadrado deslizando"></div></div>
+      </article>
+
+      <article class="demo-card">
+        <h3>Girando</h3>
+<pre><code>&#64;keyframes girar &#123;
+  from &#123; transform: rotate(0deg); &#125;
+  to   &#123; transform: rotate(360deg); &#125;
+&#125;</code></pre>
+        <div class="demo-area"><div class="bola-girar" aria-label="Quadrado girando"></div></div>
+      </article>
+
+      <article class="demo-card">
+        <h3>Piscando</h3>
+<pre><code>&#64;keyframes piscar &#123;
+  from &#123; opacity: 1; &#125;
+  to   &#123; opacity: 0; &#125;
+&#125;</code></pre>
+        <div class="demo-area"><div class="bola-piscar" aria-label="Bola piscando"></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="comparison">
+    <h2>Propriedades principais</h2>
+    <div class="comparison-box">
+      <article class="good">
+        <h3>transition</h3>
+<pre><code>transition: propriedade duração timing;
+
+Exemplo:
+transition: background 0.3s ease;</code></pre>
+      </article>
+      <article class="good">
+        <h3>animation</h3>
+<pre><code>animation: nome duração repetição direção;
+
+Exemplo:
+animation: pulsar 1s infinite;</code></pre>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>&#64;todos os direitos reservados</footer>

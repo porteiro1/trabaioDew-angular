@@ -1,0 +1,53 @@
+.demo-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.demo-barra {
+  background: #7c7c7c;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.barra-80 { width: 80%; }
+.barra-50 { width: 50%; }
+.barra-30 { width: 30%; }
+
+.demo-rem,
+.demo-vw {
+  margin-top: 1rem;
+  background: #ccc;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.texto-2rem { font-size: 2rem; }
+.texto-1rem { font-size: 1rem; }
+.texto-08rem { font-size: 0.8rem; }
+
+.demo-vw p {
+  font-size: 3vw;
+}
+
+.demo-vh {
+  margin-top: 1rem;
+  background: #ccc;
+  border-radius: 4px;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .demo-vw p {
+    font-size: 4vw;
+  }
+}

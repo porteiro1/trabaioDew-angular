@@ -1,0 +1,88 @@
+<header class="top-bar">
+  <h1>Medidas Relativas</h1>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <h2>6) Por que usar medidas relativas?</h2>
+    <p>Medidas relativas ajudam o site a se adaptar melhor a diferentes telas e tamanhos de texto. Elas são mais eficientes do que medidas fixas como <code>px</code>.</p>
+  </section>
+
+  <section class="topics">
+    <article class="card">
+      <h3>% — Porcentagem</h3>
+      <p>Relativa ao elemento pai. Se o pai tem 800px de largura, <code>width: 50%</code> resulta em 400px.</p>
+<pre><code>.caixa &#123;
+  width: 80%;
+&#125;</code></pre>
+      <div class="demo-container" aria-label="Demonstração de porcentagem">
+        <div class="demo-barra barra-80">80%</div>
+        <div class="demo-barra barra-50">50%</div>
+        <div class="demo-barra barra-30">30%</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>rem — Root em</h3>
+      <p>Relativa ao tamanho de fonte do elemento raiz <code>&lt;html&gt;</code>. Por padrão, <code>1rem = 16px</code>.</p>
+<pre><code>h1 &#123;
+  font-size: 2rem; /* 32px */
+&#125;
+
+p &#123;
+  font-size: 1rem; /* 16px */
+&#125;</code></pre>
+      <div class="demo-rem">
+        <p class="texto-2rem">Texto 2rem</p>
+        <p class="texto-1rem">Texto 1rem</p>
+        <p class="texto-08rem">Texto 0.8rem</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>vw — Viewport Width</h3>
+      <p>Relativa à largura da janela do navegador. <code>1vw = 1%</code> da largura da tela.</p>
+<pre><code>.titulo &#123;
+  font-size: 5vw;
+&#125;</code></pre>
+      <div class="demo-vw">
+        <p>Este texto usa 3vw — cresce com a tela!</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>vh — Viewport Height</h3>
+      <p>Relativa à altura da janela do navegador. <code>100vh</code> equivale à altura total da tela visível.</p>
+<pre><code>.hero &#123;
+  height: 100vh;
+&#125;</code></pre>
+      <div class="demo-vh">Esta caixa tem 20vh de altura</div>
+    </article>
+  </section>
+
+  <section class="comparison">
+    <h2>Medidas fixas vs relativas</h2>
+    <div class="comparison-box">
+      <article class="bad">
+        <h3>❌ Medidas fixas (px)</h3>
+<pre><code>.caixa &#123;
+  width: 600px;
+  font-size: 24px;
+  height: 400px;
+&#125;</code></pre>
+        <p>Problema: não se adapta bem a telas menores ou maiores. O layout pode quebrar.</p>
+      </article>
+      <article class="good">
+        <h3>✅ Medidas relativas</h3>
+<pre><code>.caixa &#123;
+  width: 80%;
+  font-size: 1.5rem;
+  height: 50vh;
+&#125;</code></pre>
+        <p>Vantagem: adapta-se automaticamente a diferentes tamanhos de tela.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>&#64;todos os direitos reservados</footer>

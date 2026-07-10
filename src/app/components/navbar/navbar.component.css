@@ -1,0 +1,45 @@
+.navbar {
+  background: #7c7c7c;
+  padding: 0.8rem 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+  background: #555;
+}
+
+.navbar a.ativo {
+  background: #444;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar ul {
+    gap: 0.3rem;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

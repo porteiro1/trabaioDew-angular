@@ -1,0 +1,97 @@
+<header class="top-bar">
+  <h1>Responsividade e Mobile First</h1>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <h2>7) O que é responsividade?</h2>
+    <p>Responsividade é a capacidade de um site se adaptar a diferentes tamanhos de tela, como celulares, tablets, notebooks e monitores grandes.</p>
+  </section>
+
+  <section class="topics">
+    <article class="card">
+      <h3>Como funciona?</h3>
+      <p>Usamos media queries no CSS para aplicar estilos diferentes dependendo do tamanho da tela.</p>
+<pre><code>&#64;media (max-width: 768px) &#123;
+  .menu &#123;
+    flex-direction: column;
+  &#125;
+&#125;</code></pre>
+    </article>
+
+    <article class="card">
+      <h3>Dispositivos comuns</h3>
+      <p>Tamanhos de tela usados como referência:</p>
+<pre><code>/* Celular */
+max-width: 480px
+
+/* Tablet */
+max-width: 768px
+
+/* Notebook */
+max-width: 1024px
+
+/* Monitor */
+min-width: 1280px</code></pre>
+    </article>
+
+    <article class="card">
+      <h3>width: 100%</h3>
+      <p>Uma forma simples de responsividade é usar <code>width: 100%</code>, fazendo o elemento ocupar toda a largura disponível.</p>
+<pre><code>img &#123;
+  width: 100%;
+&#125;
+
+.caixa &#123;
+  width: 100%;
+&#125;</code></pre>
+    </article>
+  </section>
+
+  <section class="mobile-first">
+    <h2>11) Mobile First — o que é e por que usar?</h2>
+    <div class="comparison-box">
+      <article class="bad">
+        <h3>❌ Desktop First</h3>
+        <p>Começa pelo desktop e usa <code>max-width</code> para adaptar ao celular. O celular vira caso especial.</p>
+<pre><code>.grid &#123;
+  grid-template-columns: repeat(3, 1fr);
+&#125;
+
+&#64;media (max-width: 768px) &#123;
+  .grid &#123;
+    grid-template-columns: 1fr;
+  &#125;
+&#125;</code></pre>
+      </article>
+      <article class="good">
+        <h3>✅ Mobile First</h3>
+        <p>Começa pelo celular e usa <code>min-width</code> para expandir em telas maiores. É a abordagem recomendada.</p>
+<pre><code>.grid &#123;
+  grid-template-columns: 1fr;
+&#125;
+
+&#64;media (min-width: 768px) &#123;
+  .grid &#123;
+    grid-template-columns: repeat(3, 1fr);
+  &#125;
+&#125;</code></pre>
+      </article>
+    </div>
+  </section>
+
+  <section class="demo-responsivo">
+    <h2>Demonstração: grid responsivo</h2>
+    <p>Redimensione a janela para ver o layout mudar automaticamente.</p>
+    <div class="grid-demo">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+    </div>
+  </section>
+</main>
+
+<footer>&#64;todos os direitos reservados</footer>
