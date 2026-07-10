@@ -1,16 +1,19 @@
 import { Routes } from '@angular/router';
-import { AcessibilidadeComponent } from './pages/acessibilidade/acessibilidade.component';
-import { MedidasComponent } from './pages/medidas/medidas.component';
-import { ResponsividadeComponent } from './pages/responsividade/responsividade.component';
-import { LayoutComponent } from './pages/layout/layout.component';
-import { AnimacoesComponent } from './pages/animacoes/animacoes.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PwaComponent } from './pages/pwa/pwa.component';
+import { FrameworksComponent } from './pages/frameworks/frameworks.component';
+import { AngularComponent } from './pages/angular/angular.component';
+import { InstalacaoComponent } from './pages/instalacao/instalacao.component';
+import { EstruturaComponent } from './pages/estrutura/estrutura.component';
+import { TrabalhoComponent } from './pages/trabalho/trabalho.component';
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'acessibilidade' },
-  { path: 'acessibilidade', component: AcessibilidadeComponent, title: 'HTML e Acessibilidade' },
-  { path: 'medidas', component: MedidasComponent, title: 'Medidas Relativas' },
-  { path: 'responsividade', component: ResponsividadeComponent, title: 'Responsividade' },
-  { path: 'layout', component: LayoutComponent, title: 'Flexbox e Grid' },
-  { path: 'animacoes', component: AnimacoesComponent, title: 'Animações CSS' },
-  { path: '**', redirectTo: 'acessibilidade' }
+  { path: '', component: HomeComponent, title: 'Aula 22 - Angular' },
+  { path: 'pwa', component: PwaComponent, title: 'PWA' },
+  { path: 'frameworks', component: FrameworksComponent, title: 'Frameworks JavaScript' },
+  { path: 'angular', component: AngularComponent, title: 'Angular' },
+  { path: 'instalacao', component: InstalacaoComponent, title: 'Instalação Angular' },
+  { path: 'estrutura', component: EstruturaComponent, title: 'Estrutura Angular' },
+  { path: 'trabalho', component: TrabalhoComponent, title: 'Indicações para o Trabalho' },
+  { path: '**', redirectTo: '' }
 ];

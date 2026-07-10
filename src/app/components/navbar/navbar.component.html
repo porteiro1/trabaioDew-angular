@@ -1,9 +1,21 @@
-<nav class="navbar" aria-label="Menu principal">
-  <ul>
-    <li><a routerLink="/acessibilidade" routerLinkActive="ativo">HTML e Acessibilidade</a></li>
-    <li><a routerLink="/medidas" routerLinkActive="ativo">Medidas</a></li>
-    <li><a routerLink="/responsividade" routerLinkActive="ativo">Responsividade</a></li>
-    <li><a routerLink="/layout" routerLinkActive="ativo">Flexbox e Grid</a></li>
-    <li><a routerLink="/animacoes" routerLinkActive="ativo">Animações</a></li>
-  </ul>
-</nav>
+<header class="site-header">
+  <nav class="navbar" aria-label="Menu principal">
+    <a class="brand" routerLink="/" aria-label="Página inicial">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>Angular</strong>
+        <small>Aula 22</small>
+      </span>
+    </a>
+
+    <ul class="nav-list">
+      <li><a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Início</a></li>
+      <li><a routerLink="/pwa" routerLinkActive="ativo">PWA</a></li>
+      <li><a routerLink="/frameworks" routerLinkActive="ativo">Frameworks</a></li>
+      <li><a routerLink="/angular" routerLinkActive="ativo">Angular</a></li>
+      <li><a routerLink="/instalacao" routerLinkActive="ativo">Instalação</a></li>
+      <li><a routerLink="/estrutura" routerLinkActive="ativo">Estrutura</a></li>
+      <li><a routerLink="/trabalho" routerLinkActive="ativo">Trabalho</a></li>
+    </ul>
+  </nav>
+</header>

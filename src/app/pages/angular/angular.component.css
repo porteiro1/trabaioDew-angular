@@ -1,0 +1,31 @@
+.angular-logo-card {
+  min-height: 390px;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  color: white;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.22), transparent 30%),
+    linear-gradient(135deg, #dd0031, #7b1fa2 55%, var(--green-dark));
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.logo-a {
+  width: min(240px, 55vw);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 48px;
+  background: rgba(255,255,255,.92);
+  color: #dd0031;
+  font-size: clamp(6rem, 18vw, 11rem);
+  font-weight: 950;
+  clip-path: polygon(50% 0, 96% 25%, 86% 86%, 50% 100%, 14% 86%, 4% 25%);
+}
+
+.angular-logo-card p {
+  color: rgba(255,255,255,.88);
+  font-weight: 800;
+}

@@ -1,0 +1,52 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Desenvolvimento Web · Univille</p>
+    <h1>Aula 22: PWA, Frameworks e criação de um projeto Angular</h1>
+    <p class="lead">Projeto refeito como uma aplicação Angular com navegação por rotas, componentes reutilizáveis, visual responsivo e conteúdo organizado a partir da apresentação.</p>
+    <div class="hero-actions">
+      <a class="btn primary" routerLink="/pwa">Começar pelo PWA</a>
+      <a class="btn ghost" routerLink="/trabalho">Ver checklist do trabalho</a>
+    </div>
+  </div>
+
+  <aside class="hero-panel" aria-label="Resumo da aula">
+    <span class="panel-badge">Angular SPA</span>
+    <h2>Conteúdo convertido em site</h2>
+    <ul>
+      <li>Rotas para cada tema da aula</li>
+      <li>Comparativos e tabelas responsivas</li>
+      <li>Comandos CLI organizados</li>
+      <li>Manifest e service worker básico</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Mapa da aula</p>
+    <h2>Principais assuntos</h2>
+  </div>
+
+  <div class="card-grid">
+    <article class="feature-card" *ngFor="let card of cards">
+      <span class="feature-icon" aria-hidden="true">{{ card.icon }}</span>
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.text }}</p>
+      <a [routerLink]="card.link" class="text-link">Abrir tema →</a>
+    </article>
+  </div>
+</section>
+
+<section class="section split">
+  <div class="surface-card">
+    <p class="eyebrow">Por que Angular?</p>
+    <h2>Projeto com organização real</h2>
+    <p>Em vez de deixar o trabalho como páginas HTML soltas, a aplicação usa estrutura de Angular: <strong>componentes</strong>, <strong>pages</strong>, <strong>app.routes.ts</strong>, <strong>styles globais</strong> e arquivos de configuração.</p>
+  </div>
+
+  <div class="surface-card alt">
+    <p class="eyebrow">Entrega</p>
+    <h2>Pronto para GitHub</h2>
+    <p>O projeto já inclui um <strong>.gitignore</strong> adequado para Angular, evitando subir <code>node_modules</code>, <code>dist</code> e arquivos temporários.</p>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+.puzzle-card {
+  min-height: 360px;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.7), rgba(255,255,255,.35)),
+    radial-gradient(circle at top right, rgba(134, 194, 50, .42), transparent 45%);
+  border: 1px solid rgba(36, 78, 33, 0.12);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.puzzle-card span {
+  font-size: clamp(4rem, 13vw, 8rem);
+  line-height: 1;
+  margin-bottom: auto;
+}
+
+.angular-card {
+  border-top: 6px solid #dd0031;
+}
+
+.react-card {
+  border-top: 6px solid #00a7ca;
+}

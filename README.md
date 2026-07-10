@@ -1,21 +1,47 @@
-# trabaioDew em Angular
+# Aula 22 — Angular, PWA e Frameworks
 
-Versão Angular do trabalho originalmente feito com HTML e CSS puro.
+Projeto Angular refeito com base na apresentação **Desenvolvimento Web — Aula 22: PWA, Frameworks e criação de um projeto Angular**.
 
-## Como rodar
+## Conteúdo do projeto
+
+- Página inicial com resumo da aula.
+- Página sobre PWA, instalação pelo navegador, uso offline e comparação com app nativo.
+- Página sobre frameworks JavaScript e comparação Angular x React.
+- Página sobre Angular e suas principais características.
+- Página de instalação com comandos de Node, npm e Angular CLI.
+- Página de estrutura de arquivos do Angular.
+- Página de checklist para entregar o trabalho e enviar ao GitHub.
+
+## Tecnologias usadas
+
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Angular Router
+- Manifest PWA
+- Service Worker básico
+
+## Como rodar localmente
 
 ```bash
 npm install
 npm start
 ```
 
-Depois acesse o endereço mostrado pelo Angular, normalmente `http://localhost:4200`.
+Depois acesse:
 
-## Estrutura
+```text
+http://localhost:4200
+```
 
-- `src/app/components/navbar`: menu principal com rotas Angular.
-- `src/app/pages/acessibilidade`: página de HTML semântico e acessibilidade.
-- `src/app/pages/medidas`: página de medidas relativas.
-- `src/app/pages/responsividade`: página de responsividade e mobile first.
-- `src/app/pages/layout`: página de Flexbox e Grid.
-- `src/app/pages/animacoes`: página de animações CSS.
+## Comandos úteis
+
+```bash
+npm run build
+ng serve --open
+```
+
+## Observação sobre GitHub
+
+Não envie a pasta `node_modules/`. O projeto já possui `.gitignore` configurado para Angular.

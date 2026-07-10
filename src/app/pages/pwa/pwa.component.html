@@ -1,0 +1,79 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Progressive Web App</p>
+    <h1>PWA combina o alcance da web com recursos de aplicativo</h1>
+    <p class="lead">Um PWA é criado com HTML, CSS e JavaScript, pode ser instalado pelo navegador, funcionar offline ou com conexão limitada e oferecer uma experiência semelhante à de um app nativo.</p>
+    <div class="hero-actions">
+      <button class="btn primary" type="button" [disabled]="!canInstall" (click)="installPwa()">
+        {{ canInstall ? 'Instalar este app' : 'Instalação disponível pelo navegador' }}
+      </button>
+      <span class="status-pill" [class.offline]="!isOnline">{{ isOnline ? 'Online' : 'Offline' }}</span>
+    </div>
+  </div>
+
+  <aside class="pwa-phone" aria-label="Ilustração de PWA">
+    <div class="phone-screen">
+      <span class="install-badge">PWA</span>
+      <h2>App-like</h2>
+      <p>Responsivo · Seguro · Instalável · Cache local</p>
+    </div>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Recursos</p>
+    <h2>O que um PWA pode oferecer</h2>
+  </div>
+
+  <div class="card-grid compact">
+    <article class="feature-card" *ngFor="let item of resources">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.text }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section split">
+  <article class="surface-card">
+    <p class="eyebrow">Quando usar?</p>
+    <h2>Bom para muitos usuários</h2>
+    <p>É uma boa escolha para sistemas corporativos, e-commerces, portais de notícias, plataformas educacionais, serviços de agendamento e aplicações que precisam de acesso simples pelo navegador.</p>
+  </article>
+
+  <article class="surface-card warning">
+    <p class="eyebrow">Quando evitar?</p>
+    <h2>Quando o nativo ainda vence</h2>
+    <p>Se a aplicação exige acesso intenso a recursos específicos do dispositivo ou máximo desempenho possível, um aplicativo nativo pode continuar sendo a opção mais adequada.</p>
+  </article>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Comparativo</p>
+    <h2>Aplicação Web x PWA x Aplicativo Nativo</h2>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Hospedeiro</th>
+          <th>Performance</th>
+          <th>Rede</th>
+          <th>Instalação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of comparisons">
+          <th scope="row">{{ row.name }}</th>
+          <td>{{ row.host }}</td>
+          <td>{{ row.performance }}</td>
+          <td>{{ row.network }}</td>
+          <td>{{ row.install }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

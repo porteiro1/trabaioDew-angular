@@ -11,3 +11,11 @@ bootstrapApplication(AppComponent, {
     )
   ]
 }).catch((err) => console.error(err));
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch((error) => {
+      console.warn('Service Worker não registrado:', error);
+    });
+  });
+}

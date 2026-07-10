@@ -1,0 +1,52 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Setup inicial</p>
+    <h1>Instalação do ambiente Angular</h1>
+    <p class="lead">Para criar e executar projetos Angular, é necessário ter Node.js, npm e Angular CLI instalados. Depois disso, o projeto pode ser criado e rodado localmente.</p>
+  </div>
+
+  <aside class="terminal-preview" aria-label="Comandos principais">
+    <span>$ npm install -g &#64;angular/cli</span>
+    <span>$ ng new meu-projeto</span>
+    <span>$ cd meu-projeto</span>
+    <span>$ ng serve --open</span>
+  </aside>
+</section>
+
+<section class="section split">
+  <article class="surface-card">
+    <p class="eyebrow">Node.js</p>
+    <h2>Ambiente de execução JavaScript</h2>
+    <p>O Node fornece o ambiente necessário para executar ferramentas JavaScript no computador. A versão recomendada é a LTS.</p>
+  </article>
+
+  <article class="surface-card alt">
+    <p class="eyebrow">npm</p>
+    <h2>Gerenciador de pacotes</h2>
+    <p>O npm vem junto com o Node e gerencia dependências, scripts e ferramentas usadas no projeto, como o Angular CLI.</p>
+  </article>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Passo a passo</p>
+    <h2>Resumo do setup</h2>
+  </div>
+
+  <ol class="timeline">
+    <li *ngFor="let step of setupSteps"><span>{{ step }}</span></li>
+  </ol>
+</section>
+
+<section class="section code-grid">
+  <app-code-block title="Verificar Node e npm" [code]="verifyCode"></app-code-block>
+  <app-code-block title="Instalar Angular CLI" [code]="cliCode"></app-code-block>
+  <app-code-block title="Criar e rodar projeto" [code]="projectCode"></app-code-block>
+  <app-code-block title="Gerar arquivos com CLI" [code]="componentCode"></app-code-block>
+</section>
+
+<section class="section surface-card center">
+  <p class="eyebrow">Servidor local</p>
+  <h2>Depois do ng serve</h2>
+  <p>Por padrão, o projeto fica disponível em <strong>http://localhost:4200</strong> e atualiza automaticamente quando os arquivos são alterados.</p>
+</section>

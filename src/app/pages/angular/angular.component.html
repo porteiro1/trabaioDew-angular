@@ -1,0 +1,40 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Framework mantido pelo Google</p>
+    <h1>Angular é usado para criar SPAs e aplicações corporativas escaláveis</h1>
+    <p class="lead">A versão moderna do Angular foi reescrita em TypeScript e se tornou uma das principais opções para sistemas grandes, organizados e de manutenção em equipe.</p>
+  </div>
+
+  <aside class="angular-logo-card" aria-label="Símbolo do Angular">
+    <div class="logo-a">A</div>
+    <p>Componentes · Rotas · TypeScript · APIs</p>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Características</p>
+    <h2>Principais recursos do Angular</h2>
+  </div>
+
+  <div class="card-grid compact">
+    <article class="feature-card" *ngFor="let feature of features">
+      <h3>{{ feature.title }}</h3>
+      <p>{{ feature.text }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section split">
+  <article class="surface-card">
+    <p class="eyebrow">Arquitetura</p>
+    <h2>Baseada em componentes</h2>
+    <p>Cada parte da tela pode ser criada como um componente: menu, rodapé, cards, páginas e blocos de código. Isso melhora a reutilização e deixa o projeto mais limpo.</p>
+  </article>
+
+  <article class="surface-card alt">
+    <p class="eyebrow">Projeto real</p>
+    <h2>Escalabilidade</h2>
+    <p>Com rotas, serviços, estilos encapsulados e TypeScript, o Angular favorece projetos de médio e grande porte, principalmente em contextos empresariais.</p>
+  </article>
+</section>

@@ -1,0 +1,39 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Estrutura de arquivos</p>
+    <h1>Um projeto Angular é organizado para facilitar manutenção e escalabilidade</h1>
+    <p class="lead">A pasta <strong>src</strong> concentra o código-fonte. Dentro de <strong>app</strong> ficam componentes, páginas, rotas, serviços e demais recursos da aplicação.</p>
+  </div>
+
+  <app-code-block title="Exemplo de estrutura" [code]="treeCode"></app-code-block>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Arquivos importantes</p>
+    <h2>O que cada parte faz</h2>
+  </div>
+
+  <div class="file-grid">
+    <article class="file-card" *ngFor="let file of files">
+      <strong>{{ file.name }}</strong>
+      <p>{{ file.text }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section split">
+  <article class="surface-card">
+    <p class="eyebrow">app.html / app.component</p>
+    <h2>Onde entra o router-outlet?</h2>
+    <p>O componente principal precisa renderizar o menu e o ponto onde cada página será carregada. No Angular moderno, isso aparece como <code>&lt;router-outlet&gt;</code>.</p>
+  </article>
+
+  <app-code-block title="Rotas básicas" [code]="routeCode"></app-code-block>
+</section>
+
+<section class="section surface-card center">
+  <p class="eyebrow">Assets</p>
+  <h2>Imagens e mídias</h2>
+  <p>Imagens, ícones e fontes devem ficar em uma pasta de arquivos estáticos. Depois, o atributo <code>src</code> das imagens deve apontar para o caminho correto.</p>
+</section>

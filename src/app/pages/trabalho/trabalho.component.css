@@ -1,0 +1,50 @@
+.delivery-card {
+  min-height: 350px;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: var(--shadow);
+}
+
+.delivery-card span {
+  font-size: 5rem;
+  margin-bottom: auto;
+}
+
+.delivery-card p {
+  color: rgba(255,255,255,.86);
+}
+
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.check-item {
+  display: flex;
+  gap: .8rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid rgba(36, 78, 33, 0.10);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+}
+
+.check-item input {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--green);
+  margin-top: .1rem;
+}
+
+.check-item span {
+  color: var(--text);
+  font-weight: 700;
+}

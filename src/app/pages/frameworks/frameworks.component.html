@@ -1,0 +1,80 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Framework JavaScript</p>
+    <h1>Framework é uma estrutura pronta para acelerar o desenvolvimento</h1>
+    <p class="lead">Ele fornece organização, padrões de arquitetura, bibliotecas e ferramentas para criar aplicações com menos erros e código mais padronizado.</p>
+  </div>
+
+  <aside class="puzzle-card" aria-label="Ilustração de framework">
+    <span>🧩</span>
+    <h2>Base pronta</h2>
+    <p>Você não começa do zero: o framework já entrega estrutura e ferramentas.</p>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Vantagens</p>
+    <h2>Por que usar frameworks?</h2>
+  </div>
+  <div class="chips-list">
+    <span *ngFor="let benefit of benefits">{{ benefit }}</span>
+  </div>
+</section>
+
+<section class="section split">
+  <article class="surface-card angular-card">
+    <p class="eyebrow">Framework completo</p>
+    <h2>Angular</h2>
+    <p>Indicado para aplicações médias e grandes que exigem organização, padronização e escalabilidade.</p>
+    <ul class="check-list">
+      <li *ngFor="let item of angularUses">{{ item }}</li>
+    </ul>
+  </article>
+
+  <article class="surface-card react-card">
+    <p class="eyebrow">Biblioteca de UI</p>
+    <h2>React</h2>
+    <p>Indicado quando o objetivo é construir interfaces modernas com maior liberdade para escolher bibliotecas.</p>
+    <ul class="check-list">
+      <li *ngFor="let item of reactUses">{{ item }}</li>
+    </ul>
+  </article>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Angular x React</p>
+    <h2>Comparação rápida</h2>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Empresa</th>
+          <th>Linguagem</th>
+          <th>Uso comum</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Angular</th>
+          <td>Framework front-end</td>
+          <td>Google</td>
+          <td>TypeScript, HTML e CSS</td>
+          <td>Sistemas corporativos, ERPs, CRMs e aplicações grandes.</td>
+        </tr>
+        <tr>
+          <th scope="row">React</th>
+          <td>Biblioteca JavaScript para UI</td>
+          <td>Meta/Facebook</td>
+          <td>JavaScript ou TypeScript com JSX</td>
+          <td>Dashboards, redes sociais, e-commerces e interfaces dinâmicas.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

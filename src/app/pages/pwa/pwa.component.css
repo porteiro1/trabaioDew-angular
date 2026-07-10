@@ -1,0 +1,75 @@
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .75rem 1rem;
+  border-radius: 999px;
+  background: #e7f8e2;
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.status-pill::before {
+  content: '';
+  width: .65rem;
+  height: .65rem;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.status-pill.offline {
+  background: #fff1d7;
+  color: #a15b00;
+}
+
+.pwa-phone {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.pwa-phone::before {
+  content: '';
+  width: min(340px, 85%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(134, 194, 50, .25), transparent 68%);
+  position: absolute;
+}
+
+.phone-screen {
+  position: relative;
+  width: min(260px, 78vw);
+  min-height: 430px;
+  padding: 2rem 1.3rem;
+  border: 14px solid #14241c;
+  border-radius: 42px;
+  color: white;
+  background:
+    linear-gradient(160deg, rgba(255,255,255,.18), transparent 38%),
+    linear-gradient(135deg, var(--green), var(--green-dark));
+  box-shadow: 0 30px 70px rgba(8, 42, 23, .28);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.install-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  color: var(--green-dark);
+  border-radius: 999px;
+  padding: .55rem .8rem;
+  font-weight: 900;
+}
+
+.phone-screen h2 {
+  font-size: clamp(2.4rem, 10vw, 4rem);
+}
+
+.phone-screen p {
+  color: rgba(255,255,255,.86);
+}

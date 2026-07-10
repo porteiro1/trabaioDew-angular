@@ -16,17 +16,35 @@
             "outputPath": "dist/trabaio-dew-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/icons",
+              "src/manifest.webmanifest",
+              "src/sw.js"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
             "production": {
               "budgets": [
-                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" },
-                { "type": "anyComponentStyle", "maximumWarning": "2kb", "maximumError": "4kb" }
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "20kb",
+                  "maximumError": "40kb"
+                }
               ],
               "outputHashing": "all"
             },
@@ -41,15 +59,16 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": { "buildTarget": "trabaio-dew-angular:build:production" },
-            "development": { "buildTarget": "trabaio-dew-angular:build:development" }
+            "production": {
+              "buildTarget": "trabaio-dew-angular:build:production"
+            },
+            "development": {
+              "buildTarget": "trabaio-dew-angular:build:development"
+            }
           },
           "defaultConfiguration": "development"
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }

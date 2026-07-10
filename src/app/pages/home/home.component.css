@@ -1,0 +1,22 @@
+.hero-panel ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: .85rem;
+}
+
+.hero-panel li {
+  padding-left: 1.7rem;
+  position: relative;
+  color: var(--muted);
+}
+
+.hero-panel li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--green-dark);
+  font-weight: 900;
+}

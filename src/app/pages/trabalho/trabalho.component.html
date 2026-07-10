@@ -1,0 +1,38 @@
+<section class="hero hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Indicações para o trabalho</p>
+    <h1>Checklist final para entregar o projeto Angular</h1>
+    <p class="lead">Esta página reúne os pontos principais da apresentação sobre como adaptar o trabalho para Angular, organizar arquivos, configurar rotas e publicar no GitHub.</p>
+  </div>
+
+  <aside class="delivery-card">
+    <span>✅</span>
+    <h2>Entrega organizada</h2>
+    <p>Com rotas, README, gitignore e componentes reutilizáveis.</p>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <p class="eyebrow">Passo a passo</p>
+    <h2>Checklist de alterações</h2>
+  </div>
+
+  <div class="check-grid">
+    <label class="check-item" *ngFor="let item of checklist">
+      <input type="checkbox" />
+      <span>{{ item }}</span>
+    </label>
+  </div>
+</section>
+
+<section class="section split">
+  <app-code-block title=".gitignore essencial" [code]="gitignoreCode"></app-code-block>
+  <app-code-block title="Enviar para o GitHub" [code]="githubCode"></app-code-block>
+</section>
+
+<section class="section surface-card center">
+  <p class="eyebrow">Como rodar</p>
+  <h2>Comandos para quem baixar o projeto</h2>
+  <p>Depois de baixar ou clonar o repositório, basta executar <code>npm install</code> e depois <code>npm start</code> ou <code>ng serve</code>.</p>
+</section>
